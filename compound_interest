@@ -1,0 +1,13 @@
+def compound_interest(principal, rate, time):
+    amount = principal * (pow((1 + rate / 100), time))
+    compound_interest = amount - principal
+    return compound_interest
+principal = float(input("Enter the principal amount: "))
+time = float(input("Enter the time in years: "))
+age = int(input("Enter the age: "))
+if age > 18:
+    rate = 12
+else:
+    rate = 10
+ci = compound_interest(principal, rate, time)
+print(f"Compound interest is: {ci}")
