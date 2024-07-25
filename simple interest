@@ -1,0 +1,10 @@
+p=int(input("enter the percentage"))
+y=int(input("enter the year"))
+a=int(input("enter the age"))
+if(a>18):
+    rate=12
+else:
+    rate=10
+s=(p*y*rate/100)
+print(s)
+
